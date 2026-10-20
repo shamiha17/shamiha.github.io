@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shamiha Jahan | Backend Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <strong style="font-family:Georgia,serif;font-size:19px">Shamiha Jahan</strong>
+  <div class="links">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#training">Training</a><a href="#contact">Contact</a>
+    <button id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <!-- EDIT: put your photo in this folder and name it photo.jpg -->
+    <div class="avatar"><span aria-hidden="true">SJ</span><img src="photo.jpg" alt="Photo of Shamiha Jahan" onerror="this.remove()"></div>
+    <h1>Shamiha Jahan</h1>
+    <p class="lead">Backend developer and Information Technology student at NSTU. I build REST APIs with Node.js and NestJS, and I’m looking for a software engineering internship.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="resp" aria-label="Profile summary shown as an API response">
+    <div class="bar"><span>GET /shamiha</span><span class="ok">200 OK</span></div>
+<pre>{
+  <span class="k">"role"</span>: <span class="s">"Software Engineer Intern"</span>,
+  <span class="k">"focus"</span>: <span class="s">"Backend"</span>,
+  <span class="k">"stack"</span>: [<span class="s">"Node.js"</span>, <span class="s">"NestJS"</span>,
+            <span class="s">"Express"</span>, <span class="s">"MySQL"</span>],
+  <span class="k">"also"</span>: [<span class="s">"Java"</span>, <span class="s">"Python"</span>,
+           <span class="s">"React"</span>, <span class="s">"Flutter"</span>],
+  <span class="k">"cgpa"</span>: <span class="s">3.39</span>,
+  <span class="k">"location"</span>: <span class="s">"Chattogram, BD"</span>,
+  <span class="k">"open_to_work"</span>: <span class="s">true</span>
+}</pre>
+  </div>
+</header>
+
+<section id="about">
+  <div class="two">
+    <div>
+      <h2>About</h2>
+      <p>I’m an Information Technology student who enjoys turning ideas into working software. My strongest area is backend development: designing REST APIs, working with databases, and structuring code with object-oriented principles.</p>
+      <p>I want to contribute to real-world projects, learn from experienced developers, and grow as a software engineer.</p>
+    </div>
+    <div class="edu">
+      <h3>B.Sc. in Information Technology</h3>
+      <p style="margin:0">Institute of Information Technology (IIT)<br>Noakhali Science and Technology University (NSTU), Bangladesh</p>
+      <p class="muted" style="margin:12px 0 0">CGPA: 3.39 / 4.00<br>Expected graduation: [Month, Year]</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="filters" role="group" aria-label="Filter projects by technology">
+    <button type="button" data-f="all" aria-pressed="true">All</button>
+    <button type="button" data-f="backend" aria-pressed="false">Backend</button>
+    <button type="button" data-f="java" aria-pressed="false">Java</button>
+    <button type="button" data-f="web" aria-pressed="false">Web</button>
+    <button type="button" data-f="mobile" aria-pressed="false">Mobile</button>
+  </div>
+
+  <article class="proj" data-t="backend mobile">
+    <div class="muted">Flutter + NestJS</div>
+    <div>
+      <h3>FarmAI: agricultural assistance app</h3>
+      <ul>
+        <li>Mobile app built with Flutter, backed by a NestJS API.</li>
+        <li>Worked on API integration and backend application development.</li>
+      </ul>
+      <div class="chips"><span class="chip">Flutter</span><span class="chip">NestJS</span><span class="chip">REST APIs</span></div>
+      <a href="#" aria-label="FarmAI repository">View on GitHub</a> <!-- EDIT: add your repo URL -->
+    </div>
+  </article>
+
+  <article class="proj" data-t="backend web">
+    <div class="muted">React + Node.js</div>
+    <div>
+      <h3>NexMart: e-commerce platform</h3>
+      <ul>
+        <li>React frontend with a Node.js and Express backend.</li>
+        <li>Worked on product management, API integration, and MySQL functionality.</li>
+      </ul>
+      <div class="chips"><span class="chip">React</span><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MySQL</span></div>
+      <a href="#" aria-label="NexMart repository">View on GitHub</a> <!-- EDIT -->
+    </div>
+  </article>
+
+  <article class="proj" data-t="java backend">
+    <div class="muted">Java</div>
+    <div>
+      <h3>Online College Fee Management System</h3>
+      <ul>
+        <li>Java application for managing student information and fee payment records.</li>
+        <li>Covers student records, payment history, balance tracking, and file-based storage.</li>
+      </ul>
+      <div class="chips"><span class="chip">Java</span><span class="chip">OOP</span><span class="chip">File handling</span></div>
+      <a href="#" aria-label="Fee management repository">View on GitHub</a> <!-- EDIT -->
+    </div>
+  </article>
+
+  <article class="proj" data-t="java">
+    <div class="muted">Java Swing</div>
+    <div>
+      <h3>Shape Sorter Game</h3>
+      <ul>
+        <li>Interactive shape-sorting game built with Java Swing.</li>
+        <li>Includes scoring, a countdown timer, and game interaction logic.</li>
+      </ul>
+      <div class="chips"><span class="chip">Java</span><span class="chip">Swing</span></div>
+      <a href="#" aria-label="Shape Sorter repository">View on GitHub</a> <!-- EDIT -->
+    </div>
+  </article>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Languages</h3><div class="chips"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span><span class="chip">JavaScript</span></div></div>
+    <div><h3>Backend</h3><div class="chips"><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">NestJS</span><span class="chip">REST APIs</span></div></div>
+    <div><h3>Databases</h3><div class="chips"><span class="chip">MySQL</span><span class="chip">SQL</span></div></div>
+    <div><h3>Frontend and mobile</h3><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">React</span><span class="chip">Flutter</span></div></div>
+    <div><h3>Core concepts</h3><div class="chips"><span class="chip">OOP</span><span class="chip">Data structures and algorithms</span></div></div>
+    <div><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Postman</span></div></div>
+    <div><h3>Data science</h3><div class="chips"><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Scikit-learn</span></div></div>
+  </div>
+</section>
+
+<section id="training">
+  <h2>Training</h2>
+  <h3 style="font-size:22px;margin-bottom:8px">Data Science and Machine Learning, Ostad</h3>
+  <p style="max-width:42em;margin:0">Covered Python, data preprocessing, exploratory data analysis, data visualization, supervised machine learning, and model evaluation.</p>
+</section>
+
+<section id="contact" style="border-top:none">
+  <div class="contact">
+    <h2>Let’s talk</h2>
+    <p style="margin:0;max-width:34em">I’m open to software engineering internships. Send me a message and I’ll reply as soon as I can.</p>
+    <ul>
+      <li>Email: <a href="mailto:you@example.com">you@example.com</a></li> <!-- EDIT -->
+      <li>Phone: [Your phone number]</li>
+      <li><a href="#">LinkedIn</a> · <a href="#">GitHub</a></li> <!-- EDIT -->
+      <li>Chattogram, Bangladesh</li>
+    </ul>
+  </div>
+</section>
+<footer>© <span id="yr">2026</span> Shamiha Jahan</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
